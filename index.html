@@ -4,10 +4,22 @@
         <meta charset="UTF-8">
         <title></title>
         <style>
+            @font-face {
+                font-family: HankenGrotesk;
+                src: url("HankenGrotesk-Bold.ttf");
+            }
+            body{
+                font-family: HankenGrotesk;;
+            }
+            image {
+                float: left;
+            }
             .wrapper {
                 width: 500px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                border-radius: 25px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             .result {
                 display: grid;
@@ -15,10 +27,22 @@
                 color: white;
                 text-align: center;
                 border-radius: 25px;
+                justify-items: center;
             }
+            #circle {
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                border-radius: 50%;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                background: #000
+                }
             .summary {
                 display: grid;
                 border-radius: 25px;
+                padding: 10px;
             }
             #reaction {
                 text-align: center;
@@ -62,8 +86,8 @@
             <div class="result">
                 Your Result<br>
                 
-                76<br>
-                of 100<br>
+                <div id="circle">76
+                of 100<br></div>
                 
                 Great<br>
                 You scored higher than 65% of the people who have taken these tests.
@@ -71,19 +95,25 @@
             <div class="summary">
                 Summary<br>
                 
-                <div id="reaction"><input type="image" src="icon-reaction.svg">
-                        Reaction
-                    80 / 100
+                <div id="reaction">
+                    <p><image src="icon-reaction.svg">Reaction
+                    80 / 100</p>
                 </div>
                 
-                <div id="memory"><input type="image" src="icon-memory.svg">Memory
-                92 / 100</div>
+                <div id="memory">
+                    <p><image src="icon-memory.svg">Memory
+                    92 / 100</p>
+                </div>
                 
-                <div id="verbal"><input type="image" src="icon-verbal.svg">Verbal
-                61 / 100</div>
+                <div id="verbal">
+                    <p><image src="icon-verbal.svg">Verbal
+                    61 / 100</p>
+                </div>
                 
-                <div id="visual"><input type="image" src="icon-visual.svg">Visual
-                72 / 100</div>
+                <div id="visual">
+                    <p><image src="icon-visual.svg">Visual
+                    72 / 100</p>
+                </div>
 
                 <div id="continue">Continue</div>
 
