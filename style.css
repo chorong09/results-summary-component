@@ -1,88 +1,133 @@
 @font-face {
     font-family: HankenGrotesk;
+    src: url("HankenGrotesk-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: HankenGrotesk;
     src: url("HankenGrotesk-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: HankenGrotesk;
+    src: url("HankenGrotesk-ExtraBold.ttf");
+    font-weight: 800;
 }
 body{
-    font-family: HankenGrotesk;;
+    font-family: HankenGrotesk;
 }
 image {
     float: left;
 }
 .wrapper {
+    
     margin:auto;
-    width: 500px;
+    width: 750px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .result {
-    display: grid;
+    font-weight: 700;
+    font-size: 24px;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
-    color: white;
+    color: lightgray;
     text-align: center;
     border-radius: 25px;
     justify-items: center;
-    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 #circle {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
+    line-height: 70%;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 80px;
+    font-weight: 800;
     color: #fff;
     text-align: center;
+    position: relative;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-    }
+}
+
+#circle div {
+    font-weight: 500;
+    font-size: 18px;
+    color: lightgray;
+}
+.explain {
+    line-height: 80%;
+    font-size: 30px;
+    color: white;
+}
+.explain span {
+    line-height: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    color: lightgray;
+}
 .summary {
+    font-weight: 700;
+    font-size: 24px;
     display: grid;
     border-radius: 25px;
-    padding: 20px;
+    padding: 30px;
 }
 #reaction {
+    height: 25px;
+    font-size: 20px;
     text-align: left;
     display: inline;
     color: hsl(0, 100%, 67%);
-    background-color: hsla(0, 100%, 67%, 0.1);
+    background-color: hsla(0, 100%, 67%, 0.05);
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 #memory {
+    height: 25px;
+    font-size: 20px;
     text-align: left;
     display: inline;
     color: hsl(39, 100%, 56%);
-    background-color: hsla(39, 100%, 56%, 0.1);
+    background-color: hsla(39, 100%, 56%, 0.05);
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
 }
 #verbal {
+    height: 25px;
+    font-size: 20px;
     text-align: left;
     display: inline;
     color: hsl(166, 100%, 37%);
-    background-color: hsla(166, 100%, 37%, 0.1);
+    background-color: hsla(166, 100%, 37%, 0.05);
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
 }
 #visual {
+    height: 25px;
+    font-size: 20px;
     text-align: left;
     display: inline;
     color: hsl(234, 85%, 45%);
-    background-color: hsla(234, 85%, 45%, 0.1);
+    background-color: hsla(234, 85%, 45%, 0.05);
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 30px;
 }
 #continue {
+    align-items: center;
+    font-size: 18px;
     text-align: center;
     display: grid;
-    color: white;
+    color: whitesmoke;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 10px;
 }
 .alignleft{
