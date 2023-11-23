@@ -146,3 +146,10 @@ score {
 perfectscore {
     color: gray;
 }
+@media screen and (max-width: 750px) {
+    .wrapper {
+        width: 375px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;  
+    }
+  }
