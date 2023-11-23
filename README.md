@@ -61,16 +61,21 @@ To see how you can add code snippets, see below:
 .proud-of-this-css {
   background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
 }
+```
 I learned how to add a gradient to the background color.
+```css
 .proud-of-this-css {
   @media screen and (max-width: 750px);
 }
+```
 I learned how to change the design when the screen width is below a specific pixel value using media queries.
+```css
 .proud-of-this-css {
   @font-face;
 }
-I learned how to apply a specific font.
 ```
+I learned how to apply a specific font.
+
 
 ### Continued development
 
